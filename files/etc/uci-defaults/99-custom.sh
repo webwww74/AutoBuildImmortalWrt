@@ -13,7 +13,7 @@ uci set "dhcp.@domain[-1].ip=203.107.6.88"
 
 
 # 计算网卡数量
-count=0
+count=2
 for iface in /sys/class/net/*; do
   iface_name=$(basename "$iface")
   # 检查是否为物理网卡（排除回环设备和无线设备）
